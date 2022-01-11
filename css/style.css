@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Prompt:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: dimgray;
+    
+}
+
+.container {
+    width: 20%;
+    margin: 32px auto;
+}
+
+.header {
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    color: gold;
+    font-size: 4.5rem;
+    font-family: 'Montserrat', sans-serif;
+    animation: header;
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {top: -250px;}
+    100% {top: 20px;}
+}
+
+.main {
+    color: gold;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.25;
+}
+
+.text-left {
+    position: relative;
+    animation: text-left;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes text-left {
+    0% {left: -1000px;}
+    85% {left: 30px;}
+    100% {left: 0;}
+    
+}
+
+.text-right {
+    position: relative;
+    margin-top: 32px;
+    text-align: right;
+    animation: text-right;
+    animation-duration: 2.5s;
+}
+
+@keyframes text-right {
+    0% {right: -1000px;}
+    85% {right: 30px;}
+    100% {right: 0;}
+    
+}
+
+.footer {
+    text-align: center;
+}
+
+.btn {
+    opacity: 0;
+    border: 2px solid white;
+    font-family: 'Montserrat', sans-serif;
+    color: gold;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin: 8rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    animation: btn;
+    position: relative;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes btn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.main1 {
+    border: 5px solid gold; 
+    width: 65%; 
+    margin: 0 auto;
+}
+
+.main1 div {
+    height: 200px;
+    width: 200px;
+    border: 10px solid gold;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+
+#red {
+    border-color: gold;
+    animation: btn1;
+    animation-duration: 1s;
+    position: relative;
+}
+
+@keyframes btn1 {
+    0% {top: -1000px;}
+    100% {top: 0px;}
+}
+
+#green {
+    border-color:gold;
+    animation: btn2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#blue {
+    border-color: gold;
+    animation: btn3;
+    animation-delay: 1s;
+    position: relative;
+    animation-duration: 3s;
+    animation-iteration-count: 30;
+}
+
+@keyframes btn3 {
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(-360deg);}
+}
+
+.footer1 {
+    padding: 100px;
+    color: gold;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 2rem;
+}
+
+
